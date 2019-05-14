@@ -12,11 +12,18 @@ using System.Windows.Forms;
 
 namespace Adressverwaltung
 {
+    
     public partial class Form1 : Form
     {
+        Data Adressen = new Data();
+       
         public Form1()
         {
+            string[] SAdressen;
             InitializeComponent();
+            SAdressen = Adressen.GetCurrentAdress();
+
+            textBox1.Text = SAdressen[0];
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -98,5 +105,46 @@ namespace Adressverwaltung
                 label28.Text = Convert.ToString("Nicht gültige URL");
             }
         }
+
+        private void Adresse_generieren_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+        private void Zufällige_adresse_Click(object sender, EventArgs e)
+        {
+            Adressen.RandomAdress();
+            UpdateUiOutput();
+        }
+        private void nächste_adresse_Click(object sender, EventArgs e)
+        {
+            Adressen.AdressForward();
+            UpdateUiOutput();
+        }
+
+        private void vorherige_adresse_Click(object sender, EventArgs e)
+        {
+            Adressen.AdressBackward();
+            UpdateUiOutput();
+        }
+
+        private void UpdateUiOutput()
+        {
+            string[] SAdressen;
+
+            SAdressen = Adressen.GetCurrentAdress();
+
+            textBox1.Text = SAdressen[0];
+        }
+        private void UpdateUiInput()
+        {
+            string[] SAdressen;
+
+            SAdressen = Adressen.GetCurrentAdress();
+
+            textBox1.Text = SAdressen[0];
+        }
+
+
     }
 }

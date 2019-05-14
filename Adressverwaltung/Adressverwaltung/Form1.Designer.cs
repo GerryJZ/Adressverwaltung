@@ -227,6 +227,7 @@
             this.Adresse_generieren.TabIndex = 19;
             this.Adresse_generieren.Text = "Adresse generieren";
             this.Adresse_generieren.UseVisualStyleBackColor = true;
+            this.Adresse_generieren.Click += new System.EventHandler(this.Adresse_generieren_Click);
             // 
             // Adresse_suchen
             // 
@@ -245,6 +246,7 @@
             this.nächste_adresse.TabIndex = 21;
             this.nächste_adresse.Text = "Nächste Adresse anzeigen";
             this.nächste_adresse.UseVisualStyleBackColor = true;
+            this.nächste_adresse.Click += new System.EventHandler(this.nächste_adresse_Click);
             // 
             // vorherige_adresse
             // 
@@ -254,6 +256,7 @@
             this.vorherige_adresse.TabIndex = 22;
             this.vorherige_adresse.Text = "Vorherige Adresse anzeigen";
             this.vorherige_adresse.UseVisualStyleBackColor = true;
+            this.vorherige_adresse.Click += new System.EventHandler(this.vorherige_adresse_Click);
             // 
             // Zufällige_adresse
             // 
@@ -263,6 +266,7 @@
             this.Zufällige_adresse.TabIndex = 23;
             this.Zufällige_adresse.Text = "Zufällige Adresse anzeigen";
             this.Zufällige_adresse.UseVisualStyleBackColor = true;
+            this.Zufällige_adresse.Click += new System.EventHandler(this.Zufällige_adresse_Click);
             // 
             // label2
             // 
@@ -295,7 +299,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(46, 468);
+            this.label13.Location = new System.Drawing.Point(41, 468);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(80, 13);
             this.label13.TabIndex = 28;

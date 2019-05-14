@@ -7,3 +7,12 @@ h:\documents\visual studio 2015\Projects\Adressverwaltung\Adressverwaltung\obj\D
 h:\documents\visual studio 2015\Projects\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.csproj.GenerateResource.Cache
 h:\documents\visual studio 2015\Projects\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.exe
 h:\documents\visual studio 2015\Projects\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.pdb
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\bin\Debug\Adressverwaltung.exe.config
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.exe
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.pdb
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.csprojResolveAssemblyReference.cache
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.Form1.resources
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.Properties.Resources.resources
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.csproj.GenerateResource.Cache
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\bin\Debug\Adressverwaltung.exe
+H:\Documents\Visual Studio 2015\Projects\Adressverwaltung-master\Adressverwaltung\Adressverwaltung\bin\Debug\Adressverwaltung.pdb
