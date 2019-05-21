@@ -25,34 +25,55 @@ namespace Adressverwaltung
         //-------------------------//
         private void Vorherige_adresse_Click(object sender, EventArgs e)
         {
-            string filePath = @"C:\tmp\AddressTest.csv";
+            var filePath = @"C:\tmp\AddressTest.csv";
+
+            string[] lines = File.ReadLines(@"C:\tmp\AddressTest.csv").ToArray();
+
+
+            string vorname = textBox10.Text;
+            string nachname = textBox13.Text;
+            string email = textBox12.Text;
+            int i = 0;
 
             using (StreamReader reader = new StreamReader(filePath))
             {
-                string line;
+                string currentLine;
 
-                //Dadurch wird die Datei bis zum letzten Eintrag gelesen.
-                while (!reader.EndOfStream)
+                //check to see if labels have value
+                if (textBox12.Text != null)
                 {
-                    line = reader.ReadLine();
-
-                    //den letzten Eintrag in der Datei auswählen.
-                    if (reader.Peek() == -1)
+                    while ((currentLine = reader.ReadLine()) != null)
                     {
-                        //die Werte in ein Array setzen
-                        string[] company = new string[9];
-                        company = line.Split(';');
+                        try
+                        {
+                            //we then find the CSV line where the email exists
+                            if (currentLine.IndexOf(email, StringComparison.CurrentCultureIgnoreCase) >= 0)
+                            {
+                                //skip all irrelvant lines
+                                string line = lines.Skip(i - 1).Take(1).First();
 
-                        //die eindeutige Mitarbeiter-ID überspringen
-                        company = company.Skip(0).ToArray();
-                        textBox10.Text = company[1];
-                        textBox13.Text = company[2];
-                        textBox12.Text = company[3];
-                        textBox11.Text = company[4];
-                        textBox17.Text = company[5];
-                        textBox16.Text = company[6];
-                        textBox15.Text = company[7];
-                        textBox14.Text = company[8];
+                                
+
+                                string[] company = new string[9];
+                                company = line.Split(';');
+                                company = company.Skip(0).ToArray();
+                                textBox10.Text = company[1];
+                                textBox13.Text = company[2];
+                                textBox12.Text = company[3];
+                                textBox11.Text = company[4];
+                                textBox17.Text = company[5];
+                                textBox16.Text = company[6];
+                                textBox15.Text = company[7];
+                                textBox14.Text = company[8];
+                                
+                            }
+                            i++;
+                        }
+                        catch (InvalidOperationException exception)
+                        {
+                            return;
+                        }
+
                     }
                 }
             }
