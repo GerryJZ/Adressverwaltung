@@ -1,18 +1,18 @@
 ,Vorgang,  Dauer (St),  Vorgänger,  Nachfolger
 ,      GUI erstellen       ,,,
 ,,,,
-A,GUI entwickeln,"1,5",,B
-B,Input validieren,"1,5",A,C
-C,E-Mail validieren,2,B,D
-D,CSV Datei einbinden,1,C,E
+A,GUI entwickeln,3,,B
+B,Input validieren,"3,75",A,C
+C,E-Mail validieren,"1,5",B,D
+D,CSV Datei einbinden,"2,25",C,E
 ,,,,
 ,      Back-End entwickeln,,,
-E,Adressen von CSV übertragen,"1,5",D,F
-F,Zufällige Adressen generieren,2,E,G
-G,die Adressen mit Funktionen anzeigen,4,F,F:G
-H,Suchfunktion hinzufügen,"1,5",G,E:F:G
+E,Adressen von CSV übertragen,3,D,F
+F,Zufällige Adressen generieren,3,E,G
+G,die Adressen mit Funktionen anzeigen,3,F,F:G
+H,Suchfunktion hinzufügen,3,G,E:F:G
 ,,,,
 ,      Mergen,,,
-I,Komponenten zusammenfügen,0.5,H,J
-J,Testing,1,I,K
-K,Dokumentation schreiben,2,I:J,
+I,Komponenten zusammenfügen,"1,5",H,J
+J,Testing,"1,5",I,K
+K,Dokumentation schreiben,"3,75",I:J,
