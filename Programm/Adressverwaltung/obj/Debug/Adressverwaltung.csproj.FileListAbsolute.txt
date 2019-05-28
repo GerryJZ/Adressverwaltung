@@ -26,3 +26,13 @@ C:\Users\Marius\Desktop\Neuer Ordner (27)\Adressverwaltung-Marius\Adressverwaltu
 C:\Users\Marius\Desktop\Neuer Ordner (27)\Adressverwaltung-Marius\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.exe
 C:\Users\Marius\Desktop\Neuer Ordner (27)\Adressverwaltung-Marius\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.pdb
 C:\Users\Marius\Desktop\Neuer Ordner (27)\Adressverwaltung-Marius\Adressverwaltung\Adressverwaltung\obj\Debug\Adressverwaltung.Adressverwaltung.resources
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\bin\Debug\Adressverwaltung.exe.config
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\bin\Debug\Adressverwaltung.exe
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\bin\Debug\Adressverwaltung.pdb
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.Adressverwaltung.resources
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.Properties.Resources.resources
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.csproj.GenerateResource.Cache
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.csproj.CoreCompileInputs.cache
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.exe
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.pdb
+C:\Users\Marius Faber\Desktop\Adressverwaltung-master\Programm\Adressverwaltung\obj\Debug\Adressverwaltung.csprojAssemblyReference.cache

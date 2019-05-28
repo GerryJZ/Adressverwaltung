@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -204,10 +205,16 @@ namespace Adressverwaltung
         }
 
       
-        public static bool CheckURLValid(string source)
+        public bool CheckURLValid(string URL = "NOURL")
         {
-            Uri uriResult;
-            return Uri.TryCreate(source, UriKind.Absolute, out uriResult) && uriResult.Scheme == Uri.UriSchemeHttp || uriResult.Scheme == Uri.UriSchemeHttps;
+            
+            var req = (HttpWebRequest)HttpWebRequest.Create(URL);
+            req.Method = "HEAD";
+            using (var resp = req.GetResponse())
+            {
+                return resp.ContentType.ToLower(CultureInfo.InvariantCulture)
+                           .StartsWith("image/");
+            }
         }
 
         private void Bild_testen_Click(object sender, EventArgs e)
@@ -216,11 +223,11 @@ namespace Adressverwaltung
             var URL = Convert.ToString(textBox9.Text);
             if (CheckURLValid(URL))
             {
-                label28.Text = Convert.ToString("Das ist eine valide URL");
+                label28.Text = Convert.ToString("Bild URL");
             }
             else
             {
-                label28.Text = Convert.ToString("Nicht gültige URL");
+                label28.Text = Convert.ToString("Keine Bild URL");
             }
         }
 
@@ -228,23 +235,7 @@ namespace Adressverwaltung
         {
 
         }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-            /*
-            pictureBox1.ImageLocation = Convert.ToString(textBox9.Text);
-            var URL = Convert.ToString(textBox9.Text);
-            if (CheckURLValid(URL))
-            {
-                label28.Text = Convert.ToString("Das ist eine valide URL");
-            }
-            else
-            {
-                label28.Text = Convert.ToString("Nicht gültige URL");
-            }
-            */
-        }
-
+        //Email Kopieren
         private void CopyEmail_Click(object sender, EventArgs e)
         {
             Clipboard.SetText(label21.Text);
